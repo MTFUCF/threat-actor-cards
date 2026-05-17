@@ -2,7 +2,7 @@
 
 Threat Actor Cards is a focused cybersecurity portfolio project owned by Matthew Faber. The goal is straightforward: A static card-based interface for presenting threat actor profile summaries, common aliases, typical targeting patterns, and memorable differentiators in a format that feels approachable without being unserious. Deployment target is GitHub Pages. The stack is HTML5, CSS3, Vanilla JavaScript, GitHub Pages. Keep the repo easy to review, easy to explain in an interview, and easy to deploy from a clean branch.
 
-When helping here, bias toward the smallest useful implementation. Preserve the deliberate no-build-step approach for the frontend. If the project uses Azure Functions, keep Node tooling isolated to `api/` and do not introduce root-level package management. Prefer plain HTML, CSS, and vanilla JavaScript that a recruiter can understand quickly by opening the repo.
+When helping here, bias toward the smallest useful implementation. Preserve the deliberate no-build-step approach for the frontend. If the project uses Azure Functions, keep Node tooling isolated to `api/` and do not introduce root-level package management. Prefer plain HTML, CSS, and vanilla JavaScript that reads clearly.
 
 What Copilot should help with:
 - Build a card layout that feels polished but still serious and readable.
