@@ -1,4 +1,4 @@
-# Threat Actor Cards
+﻿# Threat Actor Cards
 
 Trading-card style profiles that make threat actor attributes easier to study and compare.
 
@@ -14,7 +14,7 @@ A static card-based interface for presenting threat actor profile summaries, com
 
 ## Live demo
 
-https://matthewfaber.github.io/threat-actor-cards/
+https://mtfucf.github.io/threat-actor-cards/
 
 ## Screenshot
 
