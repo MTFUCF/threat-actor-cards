@@ -34,7 +34,7 @@
         "Snuggle (exploit kit)",
         "CHOPSTICK (remote access)"
       ],
-      "source": "https://www.mandiant.com/resources/reports/apt28"
+      "source": "https://attack.mitre.org/groups/G0007/"
     },
     {
       "id": "apt29",
@@ -64,7 +64,7 @@
         "WellMess (backdoor)",
         "SUNBURST/SUNBURST (supply chain)"
       ],
-      "source": "https://www.mandiant.com/resources/reports/apt29"
+      "source": "https://attack.mitre.org/groups/G0016/"
     },
     {
       "id": "lazarus",
@@ -95,7 +95,7 @@
         "WannaCry (ransomware)",
         "APPLEJEUS (fake cryptocurrency exchange)"
       ],
-      "source": "https://www.mandiant.com/resources/reports/lazarus-group"
+      "source": "https://attack.mitre.org/groups/G0032/"
     },
     {
       "id": "apt41",
@@ -125,7 +125,7 @@
         "GODZILLA (web shell)",
         "Mimikatz (credential dumping)"
       ],
-      "source": "https://www.mandiant.com/resources/reports/apt41"
+      "source": "https://attack.mitre.org/groups/G0096/"
     },
     {
       "id": "fin7",
@@ -156,7 +156,7 @@
         "DEATHBRINGER (point-of-sale malware)",
         "Various RATs (jiripbot, Metasploit)"
       ],
-      "source": "https://www.mandiant.com/resources/reports/fin7"
+      "source": "https://attack.mitre.org/groups/G0046/"
     },
     {
       "id": "sandworm",
@@ -187,7 +187,7 @@
         "LOGINS (credential stealer)",
         "PAM/PIPEDREAM (ICS exploit framework)"
       ],
-      "source": "https://www.mandiant.com/resources/reports/sandworm"
+      "source": "https://attack.mitre.org/groups/G0034/"
     },
     {
       "id": "conti",
@@ -218,7 +218,7 @@
         "MIMIKATZ (credential dumping)",
         "Various open-source post-exploit tools"
       ],
-      "source": "https://www.cisa.gov/news-events/cybersecurity-advisories/2021/05/27/conti-ransomware-attacks"
+      "source": "https://www.cisa.gov/news-events/alerts/2021/09/22/conti-ransomware"
     },
     {
       "id": "lockbit",
@@ -248,7 +248,7 @@
         "COBALT STRIKE (post-exploitation)",
         "ADMFinder (Windows admin password finder)"
       ],
-      "source": "https://www.mandiant.com/resources/reports/lockbit"
+      "source": "https://attack.mitre.org/groups/G0097/"
     },
     {
       "id": "volt-typhoon",
@@ -276,7 +276,7 @@
         "LIVING OFF THE LAND exploitation",
         "Custom web shells and network utilities"
       ],
-      "source": "https://www.cisa.gov/news-events/cybersecurity-advisories/2023/05/24/volt-typhoon-targeting-critical-infrastructure"
+      "source": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-038a"
     },
     {
       "id": "midnight-blizzard",
@@ -304,7 +304,7 @@
         "OAuth token theft",
         "Account enumeration and password spraying"
       ],
-      "source": "https://www.cisa.gov/news-events/cybersecurity-advisories/2023/07/18/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+      "source": "https://www.microsoft.com/en-us/security/security-insider/threat-landscape/midnight-blizzard"
     },
     {
       "id": "scattered-spider",
@@ -333,7 +333,7 @@
         "SIM swapping tools",
         "Open-source post-exploit tools"
       ],
-      "source": "https://www.mandiant.com/resources/reports/scattered-spider"
+      "source": "https://attack.mitre.org/groups/G1019/"
     }
   ]
 }
