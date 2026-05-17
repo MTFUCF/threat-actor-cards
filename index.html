@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Static threat actor profile cards with filters, search, citations, and keyboard-accessible flip interactions."
+    />
+    <title>Threat Actor Cards</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="src/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="shell header-row">
+        <div class="header-copy">
+          <p class="eyebrow">Matthew Faber · Threat Intel Study Aid</p>
+          <h1>Threat Actor Cards</h1>
+          <p class="lede">
+            Trading-card style threat actor profiles that stay educational and reviewable: aliases, targets,
+            campaigns, techniques, malware, and source citations in one static interface.
+          </p>
+        </div>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">
+          Theme
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content" class="shell page-content">
+      <section class="hero-panel" aria-labelledby="hero-title">
+        <div class="hero-grid">
+          <div>
+            <p class="section-kicker">OSINT profile deck</p>
+            <h2 id="hero-title">Compare codenames, aliases, targets, and common techniques without glamorizing the actors</h2>
+            <p>
+              Search the deck, filter by group type, and flip each card for campaigns, MITRE techniques, malware,
+              and source links. Cards are optimized for tap, click, and keyboard use.
+            </p>
+          </div>
+          <div class="hero-stats" aria-label="Quick stats">
+            <div class="stat-card"><span class="stat-value">11</span><span class="stat-label">Actors</span></div>
+            <div class="stat-card"><span class="stat-value">4</span><span class="stat-label">Filter groups</span></div>
+            <div class="stat-card"><span class="stat-value">2</span><span class="stat-label">Card faces</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="controls-panel" aria-labelledby="controls-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Search and filter</p>
+            <h2 id="controls-title">Find actors by codename, alias, or group type</h2>
+          </div>
+          <p class="section-note">Nation-state cards use the most prominent border treatment; ransomware and financially motivated groups are visually distinct.</p>
+        </div>
+
+        <div class="search-row">
+          <label class="search-field" for="search-input">
+            <span>Search by codename or alias</span>
+            <input id="search-input" name="search" type="search" placeholder="Example: Cozy Bear, Fancy Bear, Wizard Spider" autocomplete="off" />
+          </label>
+          <div id="group-chips" class="chip-row" role="group" aria-label="Filter cards by group"></div>
+        </div>
+        <p id="result-summary" class="result-summary" aria-live="polite"></p>
+      </section>
+
+      <section class="grid-panel" aria-labelledby="grid-title">
+        <div class="section-heading compact">
+          <div>
+            <p class="section-kicker">Card grid</p>
+            <h2 id="grid-title">Profile cards</h2>
+          </div>
+          <p class="section-note">Open a card to see campaigns, tools, MITRE references, and source citations.</p>
+        </div>
+        <div id="card-grid" class="card-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      Built by Matthew Faber ·
+      <a href="https://github.com/matthewfaber/threat-actor-cards">source</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,339 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "date_created": "2026-05-16",
+    "description": "Major threat actors 'trading cards' - codenames, tactics, campaigns, and malware",
+    "total_actors": 11,
+    "note": "Data from open-source intelligence (Mandiant, CrowdStrike, MITRE Groups, CISAs, security firm reports)"
+  },
+  "threat_actors": [
+    {
+      "id": "apt28",
+      "primary_codename": "APT28",
+      "aliases": ["Fancy Bear", "Sofacy", "STRONTIUM", "Pawn Storm"],
+      "suspected_origin": "Russia (GRU - Main Intelligence Directorate)",
+      "primary_targets": {
+        "sectors": ["Government", "Defense", "Media", "Aerospace", "Think Tanks"],
+        "regions": ["NATO countries", "Ukraine", "Georgia", "Global"]
+      },
+      "notable_campaigns": [
+        "2016 US Election interference",
+        "NotPetya wiper attacks (2017)",
+        "2020 US State Department spear-phishing (GAMEFISH)"
+      ],
+      "commonly_used_techniques": [
+        "T1566 (Phishing)",
+        "T1598 (Phishing for Information)",
+        "T1199 (Trusted Relationship)",
+        "T1021 (Remote Services)",
+        "T1562 (Impair Defenses)"
+      ],
+      "notable_malware_tools": [
+        "Sofacy/X-Agent (backdoor)",
+        "Downdelph (downloader)",
+        "Snuggle (exploit kit)",
+        "CHOPSTICK (remote access)"
+      ],
+      "source": "https://www.mandiant.com/resources/reports/apt28"
+    },
+    {
+      "id": "apt29",
+      "primary_codename": "APT29",
+      "aliases": ["Cozy Bear", "Midnight Blizzard", "The Dukes", "IRON HEMLOCK"],
+      "suspected_origin": "Russia (SVR - Foreign Intelligence Service)",
+      "primary_targets": {
+        "sectors": ["Government", "Defense", "Intelligence", "Think Tanks", "Energy"],
+        "regions": ["US", "NATO", "EU", "Global"]
+      },
+      "notable_campaigns": [
+        "SolarWinds supply chain attack (2020)",
+        "Microsoft Exchange Server exploitation (2021)",
+        "Continued US government targeting (2024)"
+      ],
+      "commonly_used_techniques": [
+        "T1195 (Supply Chain Compromise)",
+        "T1566 (Phishing)",
+        "T1547 (Boot or Logon Autostart)",
+        "T1037 (Boot or Logon Initialization Scripts)",
+        "T1583 (Acquire Infrastructure)"
+      ],
+      "notable_malware_tools": [
+        "BOOMBOX (malware loader)",
+        "ROOTKIT (privilege escalation)",
+        "COSMICPUPPET (command & control)",
+        "WellMess (backdoor)",
+        "SUNBURST/SUNBURST (supply chain)"
+      ],
+      "source": "https://www.mandiant.com/resources/reports/apt29"
+    },
+    {
+      "id": "lazarus",
+      "primary_codename": "Lazarus Group",
+      "aliases": ["DPRK", "HIDDEN COBRA", "Zinc", "LABYRINTH CHOLLIMA"],
+      "suspected_origin": "North Korea (reconnaissance bureau under Choe Ryong-hae)",
+      "primary_targets": {
+        "sectors": ["Finance", "Defense", "Energy", "Government", "Cryptocurrency"],
+        "regions": ["US", "South Korea", "Europe", "Global"]
+      },
+      "notable_campaigns": [
+        "Sony Pictures Entertainment hack (2014)",
+        "Bangladesh Central Bank heist (2016, $81M)",
+        "WannaCry ransomware (2017)",
+        "Cryptocurrency exchange thefts (2018–2024)"
+      ],
+      "commonly_used_techniques": [
+        "T1195 (Supply Chain Compromise)",
+        "T1566 (Phishing)",
+        "T1189 (Drive-by Compromise)",
+        "T1040 (Network Sniffing)",
+        "T1005 (Data from Local System)"
+      ],
+      "notable_malware_tools": [
+        "MATA (modular framework)",
+        "DTRACK (banking trojan)",
+        "DESTOVER (RAT)",
+        "WannaCry (ransomware)",
+        "APPLEJEUS (fake cryptocurrency exchange)"
+      ],
+      "source": "https://www.mandiant.com/resources/reports/lazarus-group"
+    },
+    {
+      "id": "apt41",
+      "primary_codename": "APT41",
+      "aliases": ["WICKED PANDA", "Winnti Group", "Double Dragon", "Axiom"],
+      "suspected_origin": "China (Chengdu, likely state-sponsored with criminal links)",
+      "primary_targets": {
+        "sectors": ["Healthcare", "Telecommunications", "Technology", "Manufacturing", "Finance"],
+        "regions": ["US", "Europe", "Asia", "Global"]
+      },
+      "notable_campaigns": [
+        "Healthcare system ransomware attacks (2019–2020)",
+        "UNC2891 supply chain campaign (Kaseya VSA, 2021)",
+        "Constant targeting of telecom and tech companies"
+      ],
+      "commonly_used_techniques": [
+        "T1190 (Exploit Public-Facing Application)",
+        "T1566 (Phishing)",
+        "T1059 (Command and Scripting Interpreter)",
+        "T1041 (Exfiltration Over C2 Channel)",
+        "T1485 (Data Destruction)"
+      ],
+      "notable_malware_tools": [
+        "Winnti (backdoor, game cheats)",
+        "EARTHWORM (proxy/tunnel)",
+        "SCANBOX (reconnaissance)",
+        "GODZILLA (web shell)",
+        "Mimikatz (credential dumping)"
+      ],
+      "source": "https://www.mandiant.com/resources/reports/apt41"
+    },
+    {
+      "id": "fin7",
+      "primary_codename": "FIN7",
+      "aliases": ["Carbanak", "Anunak", "Beacon Orchid", "Sangria Tempest"],
+      "suspected_origin": "Russia or former Soviet states; likely criminal group",
+      "primary_targets": {
+        "sectors": ["Finance", "Retail", "Hospitality", "Government", "Healthcare"],
+        "regions": ["Primarily US, Europe"]
+      },
+      "notable_campaigns": [
+        "Point-of-sale (POS) malware attacks (2013–2016)",
+        "CARBANAK bank theft ($100M+)",
+        "BEACON malware campaigns (2019–2024)",
+        "Ransomware distribution (2020–present)"
+      ],
+      "commonly_used_techniques": [
+        "T1566 (Phishing)",
+        "T1059 (Command and Scripting Interpreter)",
+        "T1021 (Remote Services)",
+        "T1041 (Exfiltration Over C2)",
+        "T1486 (Data Encrypted for Impact)"
+      ],
+      "notable_malware_tools": [
+        "CARBANAK/Anunak (banking trojan)",
+        "BEACON (command & control, JS backdoor)",
+        "POWERSPLOIT (PowerShell toolkit)",
+        "DEATHBRINGER (point-of-sale malware)",
+        "Various RATs (jiripbot, Metasploit)"
+      ],
+      "source": "https://www.mandiant.com/resources/reports/fin7"
+    },
+    {
+      "id": "sandworm",
+      "primary_codename": "Sandworm Team",
+      "aliases": ["Voodoo Bear", "IRON VIKING", "Telebots", "UNIT 74455"],
+      "suspected_origin": "Russia (GRU, Directorate of Military Intelligence)",
+      "primary_targets": {
+        "sectors": ["Energy", "Government", "Defense", "Telecommunications"],
+        "regions": ["Ukraine", "US", "EU", "NATO"]
+      },
+      "notable_campaigns": [
+        "Ukraine power grid attacks (2015, 2016)",
+        "NOTPETYA wiper campaign (2017)",
+        "Oldsmar Water Treatment spear-phishing (2021)",
+        "Ukraine critical infrastructure targeting (2022–2024)"
+      ],
+      "commonly_used_techniques": [
+        "T1195 (Supply Chain Compromise)",
+        "T1078 (Valid Accounts)",
+        "T1059 (Command and Scripting Interpreter)",
+        "T1561 (Disk Wipe)",
+        "T1529 (System Shutdown/Reboot)"
+      ],
+      "notable_malware_tools": [
+        "BLACK ENERGY (ICS-focused trojan)",
+        "NOTPETYA (disk wiper, ICS-aware)",
+        "INDUSTROYER/CRASHTOVERRIDE (ICS worm)",
+        "LOGINS (credential stealer)",
+        "PAM/PIPEDREAM (ICS exploit framework)"
+      ],
+      "source": "https://www.mandiant.com/resources/reports/sandworm"
+    },
+    {
+      "id": "conti",
+      "primary_codename": "Conti Ransomware Gang",
+      "aliases": ["Wizard Spider", "Karakurt", "Callisto Group (successor)"],
+      "suspected_origin": "Russia (Eastern Europe); rebranded successors post-2022 sanctions",
+      "primary_targets": {
+        "sectors": ["Healthcare", "Finance", "Manufacturing", "Government", "Retail"],
+        "regions": ["Global, especially US"]
+      },
+      "notable_campaigns": [
+        "Healthcare ransomware wave (2021–2022)",
+        "Colonial Pipeline ransomware (2021)",
+        "Ongoing evolution as Karakurt/BlackCat (2022–2024)",
+        "Double-extortion attacks with data theft"
+      ],
+      "commonly_used_techniques": [
+        "T1566 (Phishing)",
+        "T1190 (Exploit Public-Facing App)",
+        "T1021 (Remote Services/RDP)",
+        "T1486 (Data Encrypted for Impact)",
+        "T1041 (Exfiltration Over C2)"
+      ],
+      "notable_malware_tools": [
+        "CONTI ransomware (RaaS)",
+        "EMOTET botnet (downloader, distribution)",
+        "COBALT STRIKE (post-exploitation)",
+        "MIMIKATZ (credential dumping)",
+        "Various open-source post-exploit tools"
+      ],
+      "source": "https://www.cisa.gov/news-events/cybersecurity-advisories/2021/05/27/conti-ransomware-attacks"
+    },
+    {
+      "id": "lockbit",
+      "primary_codename": "LockBit Ransomware Gang",
+      "aliases": ["LockBit Black", "LockBit 3.0", "ALPHV"],
+      "suspected_origin": "Russia (Eastern Europe, underground forums)",
+      "primary_targets": {
+        "sectors": ["Healthcare", "Finance", "Manufacturing", "Government", "Education"],
+        "regions": ["Global"]
+      },
+      "notable_campaigns": [
+        "Continuous healthcare and critical infrastructure targeting (2019–2024)",
+        "UK's National Pharmacies ransomware (2023)",
+        "Royal Mail attack (2023)",
+        "Alleged affiliation with APT41 (reported 2024)"
+      ],
+      "commonly_used_techniques": [
+        "T1566 (Phishing)",
+        "T1190 (Exploit Public-Facing App)",
+        "T1021 (Remote Services)",
+        "T1486 (Data Encrypted for Impact)",
+        "T1490 (Inhibit System Recovery)"
+      ],
+      "notable_malware_tools": [
+        "LOCKBIT ransomware (RaaS, constantly updated)",
+        "STEALBIT (data exfiltration component)",
+        "COBALT STRIKE (post-exploitation)",
+        "ADMFinder (Windows admin password finder)"
+      ],
+      "source": "https://www.mandiant.com/resources/reports/lockbit"
+    },
+    {
+      "id": "volt-typhoon",
+      "primary_codename": "Volt Typhoon",
+      "aliases": ["Vanguard Panda"],
+      "suspected_origin": "China (Ministry of State Security, likely)",
+      "primary_targets": {
+        "sectors": ["Critical Infrastructure", "Energy", "Water", "Telecommunications", "Manufacturing"],
+        "regions": ["US, global"]
+      },
+      "notable_campaigns": [
+        "Multi-year (5+ year) pre-positioning in critical infrastructure (through 2024)",
+        "Long dwell-time, living-off-the-land approach",
+        "CISA advisory 2023 highlighting operational security focus"
+      ],
+      "commonly_used_techniques": [
+        "T1021 (Remote Service Session Initiation)",
+        "T1078 (Valid Accounts)",
+        "T1199 (Trusted Relationship)",
+        "T1570 (Lateral Tool Transfer)",
+        "T1005 (Data from Local System)"
+      ],
+      "notable_malware_tools": [
+        "No known custom malware; uses legitimate tools (SSH, ping, tracert, etc.)",
+        "LIVING OFF THE LAND exploitation",
+        "Custom web shells and network utilities"
+      ],
+      "source": "https://www.cisa.gov/news-events/cybersecurity-advisories/2023/05/24/volt-typhoon-targeting-critical-infrastructure"
+    },
+    {
+      "id": "midnight-blizzard",
+      "primary_codename": "Midnight Blizzard",
+      "aliases": ["APT29 variant", "COZY BEAR (newer ops)", "IRON HEMLOCK"],
+      "suspected_origin": "Russia (SVR)",
+      "primary_targets": {
+        "sectors": ["Government", "Defense", "Healthcare", "Enterprise IT"],
+        "regions": ["US, NATO countries"]
+      },
+      "notable_campaigns": [
+        "Microsoft 365/Outlook account compromise (2023–2024)",
+        "Russian Foreign Ministry account takeover (own own people, 2023)",
+        "US State Department phishing (2024)",
+        "Multiple CISA advisories 2023-2024"
+      ],
+      "commonly_used_techniques": [
+        "T1078 (Valid Accounts / Compromised Credentials)",
+        "T1566 (Phishing)",
+        "T1556 (Modify Authentication Process)",
+        "T1598 (Phishing for Information)"
+      ],
+      "notable_malware_tools": [
+        "Minimal malware; focuses on credential compromise and mailbox access",
+        "OAuth token theft",
+        "Account enumeration and password spraying"
+      ],
+      "source": "https://www.cisa.gov/news-events/cybersecurity-advisories/2023/07/18/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "id": "scattered-spider",
+      "primary_codename": "Scattered Spider",
+      "aliases": ["0ktapus", "Muddled Libra"],
+      "suspected_origin": "Unknown (likely Russia or Eastern Europe, underground operations)",
+      "primary_targets": {
+        "sectors": ["Technology", "Telecommunications", "Finance", "Healthcare"],
+        "regions": ["US, global"]
+      },
+      "notable_campaigns": [
+        "Okta breach attempt (2023)",
+        "Telecom and tech company intrusions (2023–2024)",
+        "Credential stuffing and SIM swapping attacks",
+        "BEC campaigns targeting corporate emails"
+      ],
+      "commonly_used_techniques": [
+        "T1598 (Phishing for Information / Credential Harvesting)",
+        "T1110 (Brute Force / Credential Stuffing)",
+        "T1621 (Multi-Factor Authentication Interception)",
+        "T1566 (Phishing)"
+      ],
+      "notable_malware_tools": [
+        "OKTA AUTHENTICATION BYPASS (0-day, 2023)",
+        "Custom session hijacking scripts",
+        "SIM swapping tools",
+        "Open-source post-exploit tools"
+      ],
+      "source": "https://www.mandiant.com/resources/reports/scattered-spider"
+    }
+  ]
+}
